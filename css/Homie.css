@@ -15,7 +15,10 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 7623107af02af9f31cefbd458b16546f4af0d367
 }
 
 .hero h1{ /* Set font and color of word */
@@ -42,6 +45,7 @@ body {
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1400px) { /* Change font size of sentence when screen more than 1400px */
     .hero h1{
         font-size: 3em;
@@ -50,3 +54,8 @@ body {
         font-size: 2em;
     }
 }
+=======
+.hero-inner {
+    margin: 25%;
+}
+>>>>>>> 7623107af02af9f31cefbd458b16546f4af0d367
