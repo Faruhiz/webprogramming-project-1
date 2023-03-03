@@ -2,9 +2,6 @@
 var fields = document.querySelectorAll(".login-form input");
 var btn = document.querySelector('#btn')
 
-console.log(fields[0].value)
-console.log(fields[1].value)
-
 /*Check fields. if both empty, button is disabled. if both filled, button is enabled.*/
 function check(){
     if(fields[0].value.length == 0 || fields[1].value.length == 0)
@@ -31,3 +28,4 @@ if(this.classList[2] == "fa-eye-slash"){
     fields[1].type = "password";
     }
 });
+

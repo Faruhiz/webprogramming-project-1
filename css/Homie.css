@@ -1,8 +1,10 @@
+/* Code for Home page */
 body {
+    height: 100%; /* Set high of body */
     margin: 0;
 }
 .hero {
-    width: auto;
+    width: auto; /* Function for set box space in body and image in middle */
     height: 90vh;
     display: flex;
     justify-content:space-between;
@@ -13,16 +15,17 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
+    
 }
-.hero h1{
+
+.hero h1{ /* Set font and color of word */
     font-size: 2em;
     color: white;
 }
 .hero h2{
     color: white;
 }
-.hero .btn {
+.hero .btn { /* Red button in middle */
     
     display: block;
     background-color: red;
@@ -39,6 +42,11 @@ body {
     border-radius: 10px;
 }
 
-.hero-inner {
-    margin: 25%;
+@media only screen and (min-width: 1400px) { /* Change font size of sentence when screen more than 1400px */
+    .hero h1{
+        font-size: 3em;
+    }
+    .hero h2{
+        font-size: 2em;
+    }
 }

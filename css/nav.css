@@ -1,13 +1,8 @@
-:root {
-  --dark-brown: #71430b;
-  --light-brown: rgb(223, 208, 189);
-  --button-brown: #8b4513;
-}
-
+/* Code for Navigator and overall page */
 * { 
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif; /* set font of page */
   }
-header {
+header { /* Code for header space and image */
   background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   height: 250px;
   background-position: center;
@@ -20,20 +15,21 @@ header {
   font-weight: bold;
 }
 
-.logins{
+.logins{ /* login image and link location */
     display: flex;
     flex-direction: row;
     position:absolute;
     right: 50px;
 }
-.logins a{
+.logins a{ /* Text color */
   text-decoration: none;
   padding-left: 20px;
   color: #FDFEFE;
 }
 
-.colum {
-  padding: 30px;
+.colum { /* Cover box */
+  font-size: 2ex;
+  padding: 20px;
   padding-left: 10%;
   padding-right: 10%;
   margin: 10px;
@@ -42,18 +38,11 @@ header {
  
 }
 
-body {
+body { /* Page body color */
     background-color: rgb(223, 208, 189);
-    margin: 0;   
+    margin: 0;    
 }
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%; 
-}
-nav {
+nav { /* Nav color and box */
     background-color: #71430b;
     margin: 0px;
     overflow: hidden;
@@ -62,7 +51,7 @@ nav {
     justify-content: center;
 
 }
-nav a {
+nav a { /* Nav text color */
     display: block;
     float: left;
     color: #FDFEFE;
@@ -71,11 +60,12 @@ nav a {
     text-align: center;
     text-decoration: none;
 }
-a:hover {
+a:hover { /* Change color when hover */
     color: #f1b45a ;
   }
 
-footer {
+footer { /* Setting footer */
+  
   background-color: rgb(70, 52, 35);
   display: flex;
   justify-content: space-between;
@@ -83,10 +73,15 @@ footer {
   padding: 20px 20px 40px 20px;
 }
 .foot {
+  
   margin-right: auto;
   color: #FDFEFE; 
 }
 .foot2{
+  display: flex;
+  flex-direction: column;
   margin-right: auto;
   color: #FDFEFE; 
 }
+  
+ 

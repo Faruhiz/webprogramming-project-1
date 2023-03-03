@@ -13,9 +13,9 @@
     </header>
     <nav>
         <h3><a href="index.html"> Home</a></h3>
-        <h3><a href="#"> Products</a></h3>
+        <h3><a href="Products.html"> Products</a></h3>
         <h3><a href="Search.html"> Search</a></h3>
-        <h3><a href="#"> About Us</a></h3>
+        <h3><a href="AboutUs.html"> About Us</a></h3>
     </nav>
 
 <body>
@@ -32,7 +32,7 @@
                 <input type="text" placeholder="Username" required>
                 <input type="password" placeholder="Password" required>
                 <div class="show-password fas fa-eye-slash"></div>
-                <button type="button" id="btn" class="disabled">Login</button>
+                <button type="button" id="btn" class="disabled" onclick="admin()">Login</button>
             </div>
             </div>
 
@@ -40,19 +40,32 @@
     </main>
 
     <footer>
-        <div class="foot">
-            <h3>About Us</h3>
-            <p>"We are new organize aimming to open<br>the best coffee shop around the world."</p>
-        </div>
-        <div class="foot2">
-            <h3>Follow Us</h3>
-            <p>Facebook</p>
-            <P>Instagram</P>
-        </div>
-    </footer>
+        <div class = "foot">
+        <h3>About Us</h3>
+        <p>"We are new organize aimming to open<br>the best coffee shop around the world."</p>
+      </div>
+        <div class ="foot2">
+        <h3>Follow Us</h3>
+        <p><i class="bi bi-facebook"> Facebook</i></p>
+        <p><i class="bi bi-instagram"> Instragram</i></p>
+      </div>
+      </footer>
 
 </body>
 
 <script type="text/javascript" src="./js/login.js"></script>
+<script>
+    function admin(){
+        var fields = document.querySelectorAll(".login-form input");
+        fetch('./js/login-info.json')
+            .then(res => res.json())
+            .then((data) => {
+                if(fields[0].value == data['admin-user'] && fields[1].value == data['admin-pass'])
+                {
+                    window.location = './admin.html'
+                }
+            })
+}
+</script>
 
 </html>
